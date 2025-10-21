@@ -16,8 +16,11 @@
         imagesizes="(max-width: 900px) 90vw, 50vw"
         type="image/webp">
 
- <link rel="preload" href="dist/app.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="dist/app.min.css"></noscript>
+ <!-- Подключение стилей через jsDelivr CDN -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/ТВОЙ_ЛОГИН/cafe22@main/dist/app.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ТВОЙ_ЛОГИН/cafe22@main/dist/app.min.css"></noscript>
+
 <style>
   html,body{margin:0}
   .header{background:#fff}

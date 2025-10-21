@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О нас — Cozy Bean</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Короткое SEO-описание -->
+  <meta name="description" content="Кафе Cozy Bean — уютное место с отличным кофе и свежей выпечкой. Узнайте больше о нас и нашей команде.">
+
+  <!-- ✅ Асинхронная загрузка стилей -->
+<link rel="preload" href="dist/app.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="dist/app.min.css"></noscript>
+
+<!-- 🩵 микро-критический CSS (необязательный, но предотвращает мигание без стилей) -->
+<style>
+  html,body{margin:0}
+  .header{background:#fff}
+  body{background:#fbf0ea;color:#2b1e17}
+</style>
+
+
+  <!-- Стили: один минифицированный файл -->
+  <link rel="preload" href="dist/app.min.css" as="style">
+  <link rel="stylesheet" href="dist/app.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <div class="logo">☕ Cozy <strong>Bean</strong></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html" class="active">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container about__wrap">
+        <div class="about__text">
+          <h1>О нашем кафе</h1>
+          <p>Cozy Bean — это место, где каждая чашка кофе готовится с заботой. Мы верим, что кофе — не просто напиток, а ритуал, который наполняет день теплом и вдохновением.</p>
+        <p>Мы используем свежие зёрна от местных обжарщиков, а выпечку готовим на собственной кухне. Заходите к нам на кофе с круассаном, встречу с друзьями или просто отдохнуть.</p>
+          <p><strong>Cozy Bean</strong> — уют, вкус и внимание к деталям.</p>
+        </div>
+
+        <!-- Большое фото: WebP + JPG fallback, по твоей просьбе оставляем lazy -->
+        <picture>
+          <source srcset="assets/img/big.webp" type="image/webp">
+          <img
+            src="assets/img/big.jpg"
+            alt="Интерьер кафе Cozy Bean"
+            width="1200" height="800"
+            loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2>Наша команда</h2>
+        <div class="team__grid">
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-1.webp" type="image/webp">
+              <img
+                src="assets/img/team-1.jpg"
+                alt="Бариста Алия"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Алия</h3>
+            <p>Главный бариста. Экспериментирует с сортами и обсмажкой.</p>
+          </div>
+
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-2.webp" type="image/webp">
+              <img
+                src="assets/img/team-2.jpg"
+                alt="Шеф-кондитер Марк"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Марк</h3>
+            <p>Шеф-кондитер. Его круассаны и чизкейк — легенда района.</p>
+          </div>
+
+          <div class="team__member">
+            <picture>
+              <source srcset="assets/img/team-3.webp" type="image/webp">
+              <img
+                src="assets/img/team-3.jpg"
+                alt="Менеджер Лена"
+                width="600" height="600"
+                loading="lazy" decoding="async">
+            </picture>
+            <h3>Лена</h3>
+            <p>Менеджер. Следит за уютом и сервисом для каждого гостя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cb-footer" role="contentinfo">
+    <div class="cb-container">
+      <div class="cb-grid">
+        <!-- Бренд -->
+        <section class="cb-col cb-brand">
+          <a href="/" class="cb-brand-line" aria-label="На главную">
+            <span class="cb-mark">CB</span>
+            <span class="cb-name">Cozy Bean</span>
+          </a>
+          <p class="cb-slogan">Кофе. Выпечка. Атмосфера.</p>
+        </section>
+
+        <!-- Навигация -->
+        <nav class="cb-col" aria-label="Разделы сайта">
+          <h3 class="cb-title">Разделы</h3>
+          <ul class="cb-links">
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Контакты -->
+        <section class="cb-col">
+          <h3 class="cb-title">Контакты</h3>
+          <ul class="cb-info">
+            <li><span>Тел.: </span><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+            <li><span>Email: </span><a href="mailto:hello@cozybean.example">hello@cozybean.example</a></li>
+            <li><span>Адрес: </span><span>Красноярск, ул. Примерная, 12</span></li>
+            <li class="cb-socials">
+              <a href="#" aria-label="VK">VK</a>
+              <a href="#" aria-label="Telegram">TG</a>
+              <a href="#" aria-label="Instagram">IG</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Время / подписка -->
+        <section class="cb-col">
+          <h3 class="cb-title">Мы открыты</h3>
+          <ul class="cb-info">
+            <li>Пн–Пт: 08:00–22:00</li>
+            <li>Сб–Вс: 09:00–23:00</li>
+          </ul>
+
+          <form id="cb-subscribe" class="cb-sub" action="#" method="post" novalidate>
+            <label for="cb-email" class="cb-visually-hidden">Email</label>
+            <div class="cb-sub-row">
+              <input id="cb-email" name="email" type="email" placeholder="Ваш email" required>
+              <button type="submit" class="cb-btn">Подписаться</button>
+            </div>
+            <p class="cb-hint">Новые десерты и акции — раз в неделю.</p>
+          </form>
+        </section>
+      </div>
+
+      <div class="cb-bottom">
+        <small>© <span id="cb-year"></span> Cozy Bean</small>
+      </div>
+    </div>
+
+    <button id="cb-top" class="cb-top" aria-label="Наверх">▲</button>
+  </footer>
+
+  <!-- JS: один бандл + lazyload, строго перед </body> -->
+  <script src="dist/app.min.js" defer></script>
+  <script src="assets/js/lazyload.js" defer></script>
+</body>
+</html>
+

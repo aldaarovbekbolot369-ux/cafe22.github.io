@@ -1,7 +1,0 @@
-Optimization summary (2025-10-17)
-- Bundled CSS files: 1 -> dist/app.min.css
-- Bundled JS files:  1 -> dist/app.min.js
-- Added .htaccess with Brotli/Gzip and caching rules
-- Injected preconnect & preload, switched scripts to defer
-- Added loading="lazy" to images and lazyload.js
-Edited index: cafe2/index.html

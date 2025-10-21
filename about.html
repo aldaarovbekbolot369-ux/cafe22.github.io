@@ -7,20 +7,16 @@
 
   <!-- Короткое SEO-описание -->
   <meta name="description" content="Кафе Cozy Bean — уютное место с отличным кофе и свежей выпечкой. Узнайте больше о нас и нашей команде.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css"></noscript>
 
-  <!-- ✅ Асинхронная загрузка стилей -->
-<link rel="preload" href="dist/app.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="dist/app.min.css"></noscript>
-
-<!-- 🩵 микро-критический CSS (необязательный, но предотвращает мигание без стилей) -->
 <style>
   html,body{margin:0}
   .header{background:#fff}
   body{background:#fbf0ea;color:#2b1e17}
 </style>
 
-
-  <!-- Стили: один минифицированный файл -->
   <link rel="preload" href="dist/app.min.css" as="style">
   <link rel="stylesheet" href="dist/app.min.css">
 </head>
@@ -169,10 +165,8 @@
 
     <button id="cb-top" class="cb-top" aria-label="Наверх">▲</button>
   </footer>
-
-  <!-- JS: один бандл + lazyload, строго перед </body> -->
-  <script src="dist/app.min.js" defer></script>
-  <script src="assets/js/lazyload.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/assets/js/lazyload.js" defer></script>
 </body>
 </html>
 

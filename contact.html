@@ -20,12 +20,10 @@
       font-weight: 600;
     }
   </style>
-
-  <!-- ✅ Асинхронная загрузка стилей -->
-<link rel="preload" href="dist/app.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="dist/app.min.css"></noscript>
-
-<!-- 🩵 микро-критический CSS (необязательный, но предотвращает мигание без стилей) -->
+<!-- Подключение стилей через jsDelivr CDN -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css"></noscript>
 <style>
   html,body{margin:0}
   .header{background:#fff}
@@ -150,8 +148,7 @@
 
     <button id="cb-top" class="cb-top" aria-label="Наверх">▲</button>
   </footer>
-
-  <script src="dist/app.min.js" defer></script>
-  <script src="assets/js/lazyload.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/assets/js/lazyload.js" defer></script>
 </body>
 </html>

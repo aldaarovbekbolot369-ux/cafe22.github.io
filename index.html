@@ -3,31 +3,30 @@
 <head>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
+ <head>
   <meta charset="UTF-8">
   <title>Cozy Bean — Кафе</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Кафе Cozy Bean — кофе с душой, свежая выпечка и уютная атмосфера каждый день.">
 
-  
-  <!-- Preload LCP-изображения -->
+  <!-- Предзагрузка крупного изображения (LCP) -->
   <link rel="preload" as="image"
         href="assets/img/dess-800.webp"
         imagesrcset="assets/img/dess-480.webp 480w, assets/img/dess-800.webp 800w, assets/img/dess-1200.webp 1200w"
         imagesizes="(max-width: 900px) 90vw, 50vw"
         type="image/webp">
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preload" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css"></noscript>
+  <!-- CDN: preconnect + надежное подключение CSS -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css" as="style">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369/cafe22@main/dist/app.min.css">
 
-<style>
-  html,body{margin:0}
-  .header{background:#fff}
-  body{background:#fbf0ea;color:#2b1e17}
-</style>
-
-</head>
-
+  <!-- микро-критикал (чтобы не мигало) -->
+  <style>
+    html,body{margin:0}
+    .header{background:#fff}
+    body{background:#fbf0ea;color:#2b1e17}
+  </style>
 </head>
 <body>
   <header class="header">

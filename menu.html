@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Меню кафе Cozy Bean: спешелти кофе, матча, свежая выпечка и десерты.">
 
-  <!-- CSS через jsDelivr CDN + фолбэк на локальный файл -->
+  <!-- CDN -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369-ux/cafe22.github.io@main/dist/app.min.css" as="style">
-  <link id="appcss" rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369-ux/cafe22.github.io@main/dist/app.min.css"
-        onerror="this.href='dist/app.min.css'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aldaarovbekbolot369-ux/cafe22.github.io@main/dist/app.min.css">
+  <!-- Надёжный бэкап: локальный CSS (загрузится даже если CDN не ответит) -->
+  <link rel="stylesheet" href="dist/app.min.css">
 
-  <!-- микро-критикал чтобы не мигало -->
+  <!-- микро-критикал, чтобы не мигало -->
   <style>
     html,body{margin:0}
     .header{background:#fff}
     body{background:#fbf0ea;color:#2b1e17}
   </style>
 </head>
+
 <body>
   <header class="header">
     <div class="container header__wrap">

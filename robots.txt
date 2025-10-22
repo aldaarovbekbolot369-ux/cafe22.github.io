@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ВАШ_ЛОГИН.github.io/cafe-site/sitemap.xml
+Sitemap: https://aldaarovbekbolot369-ux.github.io/cafe22.github.io/sitemap.xml
